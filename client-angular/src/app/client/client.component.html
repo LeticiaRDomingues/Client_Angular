@@ -1,0 +1,20 @@
+{{clients | json}}
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Client Of clients">
+      <th scope="row">{{Client.id}}</th>
+      <td>{{Client.name}}</td>
+      <td>{{Client.email}}</td>
+    </tr>
+  </tbody>
+</table>
+
